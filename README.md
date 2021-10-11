@@ -5,6 +5,7 @@ A new Flutter project.
 ## Preview
 
 This project is a starting point for a Flutter application.
+<br>
 <img src="https://github.com/Msshinana/imagesource/blob/master/flutter_image_demo.gif" width="30%" height="30%">
 
 ## Getting started
@@ -18,10 +19,13 @@ dependencies:
   lottie: ^<latest_version>
 
 If you want to use wrapped dependency packages, In your library add the following file:
+<br>
 <img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png" width="30%" height="30%">
 
 ## Example of Network Image
 <img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">
+
+
 ```dart
 
 import 'package:flutter_image_demo/manager/sn_image_manager.dart';
@@ -46,7 +50,8 @@ import 'package:flutter_image_demo/manager/sn_image_manager.dart';
     ),
   )
   
- ```
+```
+ 
 You can find more examples in the <a href="example_lottie_page">example_image_cache_page.dart</a>
 
 ## Example of PhotoView
