@@ -1,6 +1,23 @@
-# flutter_image_demo
+flutter_image_demo
+=
 
-A new Flutter project.
+flutter image demo 主要展示图片与动画处理的案例。比如：网络图片加载、图片预览、图片缩放、json动画处理等等。
+-
+
+本项目使用到以下插件：
+<a href="https://pub.flutter-io.cn/packages/cached_network_image">cached_network_image</a>
+<a href="https://pub.flutter-io.cn/packages/photo_view">photo_view</a> 
+<a href="https://pub.flutter-io.cn/packages/lottie">lottie</a> 
+<a href="https://pub.flutter-io.cn/packages/flutter_svg">flutter_svg</a>
+
+# Catalog （目录）
+## Mind Map (思维导图)
+## Getting started （开始前准备）
+## Example of Network Image （加载网络图片案例）
+## Example of PhotoView （图片预览案例）
+## Example of Svg （加载Svg案例）
+## Example of Lottie （加载json动画案例）
+
 
 ## Mind Map
 <br>
@@ -23,6 +40,7 @@ dependencies:
 If you want to use wrapped dependency packages, In your library add the following file:
 <br>
 <img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png" width="50%" height="50%">
+
 
 ## Example of Network Image
 <img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">
@@ -118,7 +136,6 @@ SvgPicture.string('''<svg viewBox="0 0 200 200"
 
 ## Example of Lottie
 <img src="https://github.com/Msshinana/imagesource/blob/master/lottie.gif" width="30%" height="30%">
-
 
 ```dart
 
