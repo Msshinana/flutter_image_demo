@@ -1,7 +1,8 @@
 flutter_image_demo
 =
 
-flutter image demo 主要展示图片与动画处理的案例。比如：网络图片加载、图片预览、图片缩放、json动画处理等等。
+flutter image demo 主要展示图片与动画处理的案例。
+  比如：网络图片加载、图片预览、图片缩放、json动画处理等等。
 -
 
 本项目使用到以下插件：
