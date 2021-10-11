@@ -2,11 +2,9 @@
 
 A new Flutter project.
 
-## Preview
-
-This project is a starting point for a Flutter application.
+## Mind Map
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/flutter_image_demo.gif" width="30%" height="30%">
+<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png">
 
 ## Getting started
 In the pubspec.yaml of your flutter project, add the following dependency:
@@ -24,7 +22,7 @@ dependencies:
 
 If you want to use wrapped dependency packages, In your library add the following file:
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png" width="30%" height="30%">
+<img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png">
 
 ## Example of Network Image
 <img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">
