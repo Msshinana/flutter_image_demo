@@ -11,12 +11,16 @@ This project is a starting point for a Flutter application.
 ## Getting started
 In the pubspec.yaml of your flutter project, add the following dependency:
 
+```dart
 dependencies:
   ...
-  cached_network_image: ^<latest_version>
-  photo_view: ^<latest_version>
-  flutter_svg: ^<latest_version>
-  lottie: ^<latest_version>
+  cached_network_image: ^3.0.0
+  photo_view: ^0.12.0
+  flutter_svg: ^0.22.0
+  lottie: ^1.2.1
+
+```
+
 
 If you want to use wrapped dependency packages, In your library add the following file:
 <br>
