@@ -6,6 +6,6 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-<img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">
-<img src="https://github.com/Msshinana/imagesource/blob/master/photo_view_demo.gif" width="30%" height="30%">
-<img src="https://github.com/Msshinana/imagesource/blob/master/lottie.gif" width="30%" height="30%">
+<img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">\n
+<img src="https://github.com/Msshinana/imagesource/blob/master/photo_view_demo.gif" width="30%" height="30%">\n
+<img src="https://github.com/Msshinana/imagesource/blob/master/lottie.gif" width="30%" height="30%">\n
