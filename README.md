@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Mind Map
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png"  width="30%" height="30%">
+<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png">
 
 ## Getting started
 In the pubspec.yaml of your flutter project, add the following dependency:
