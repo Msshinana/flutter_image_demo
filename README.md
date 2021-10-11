@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Mind Map
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png">
+<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png"  width="30%" height="30%">
 
 ## Getting started
 In the pubspec.yaml of your flutter project, add the following dependency:
@@ -22,7 +22,7 @@ dependencies:
 
 If you want to use wrapped dependency packages, In your library add the following file:
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png">
+<img src="https://github.com/Msshinana/imagesource/blob/master/flutter_manager.png" width="50%" height="50%">
 
 ## Example of Network Image
 <img src="https://github.com/Msshinana/imagesource/blob/master/network_image.gif" width="30%" height="30%">
