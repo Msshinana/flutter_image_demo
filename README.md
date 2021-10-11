@@ -10,13 +10,13 @@ flutter image demo 主要展示图片与动画处理的案例。比如：网络�
 <a href="https://pub.flutter-io.cn/packages/lottie">lottie</a> 
 <a href="https://pub.flutter-io.cn/packages/flutter_svg">flutter_svg</a>
 
-# Catalog （目录）
-## Mind Map (思维导图)
-## Getting started （开始前准备）
-## Example of Network Image （加载网络图片案例）
-## Example of PhotoView （图片预览案例）
-## Example of Svg （加载Svg案例）
-## Example of Lottie （加载json动画案例）
+* Catalog （目录）
+* Mind Map (思维导图)
+* Getting started （开始前准备）
+* Example of Network Image （加载网络图片案例）
+* Example of PhotoView （图片预览案例）
+* Example of Svg （加载Svg案例）
+* Example of Lottie （加载json动画案例）
 
 
 ## Mind Map
