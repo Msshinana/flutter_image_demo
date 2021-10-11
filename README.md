@@ -5,12 +5,12 @@ flutter image demo 主要展示图片与动画处理的案例。比如：网络�
 -
 
 本项目使用到以下插件：
-<a href="https://pub.flutter-io.cn/packages/cached_network_image">cached_network_image</a>
-<a href="https://pub.flutter-io.cn/packages/photo_view">photo_view</a> 
-<a href="https://pub.flutter-io.cn/packages/lottie">lottie</a> 
+<a href="https://pub.flutter-io.cn/packages/cached_network_image">cached_network_image</a>、
+<a href="https://pub.flutter-io.cn/packages/photo_view">photo_view</a> 、
+<a href="https://pub.flutter-io.cn/packages/lottie">lottie</a> 、
 <a href="https://pub.flutter-io.cn/packages/flutter_svg">flutter_svg</a>
 
-* Catalog （目录）
+## Catalog （目录）
 * Mind Map (思维导图)
 * Getting started （开始前准备）
 * Example of Network Image （加载网络图片案例）
@@ -21,7 +21,7 @@ flutter image demo 主要展示图片与动画处理的案例。比如：网络�
 
 ## Mind Map
 <br>
-<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png">
+<img src="https://github.com/Msshinana/imagesource/blob/master/mind_map.png" width="80%" height="80%" align="middle" >
 
 ## Getting started
 In the pubspec.yaml of your flutter project, add the following dependency:
