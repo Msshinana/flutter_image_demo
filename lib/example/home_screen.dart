@@ -5,7 +5,7 @@ import 'package:flutter_image_demo/example/setting_screen.dart';
 import 'example_image_cache_page.dart';
 import 'example_photo_view_page.dart';
 import 'example_lottie_page.dart';
-import 'example_svg_page.dart';
+import 'example_svgaplayer_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -42,12 +42,12 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
                 ButtonItemNode(
-                  text: 'Svg',
+                  text: 'SVGA',
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const ExampleSvgPage()),
+                          builder: (context) => ExampleSvgaplayerPage()),
                     );
                   },
                 ),

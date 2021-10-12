@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_image_demo/example/src/all_files.g.dart';
-import 'package:flutter_image_demo/example/common/app_bar.dart';
+import 'package:flutter_image_demo/example/common/ex_wrapper.dart';
 
 class ExampleLottieOperation extends StatelessWidget {
   const ExampleLottieOperation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ExampleAppBarLayout(
-      title: 'control',
-      showGoBack: true,
-      child: GridView.builder(
+    return Scaffold(
+      appBar: AppBar(title: const Text('control')),
+      body: GridView.builder(
         itemCount: files.length,
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
@@ -24,7 +23,7 @@ class ExampleLottieOperation extends StatelessWidget {
                   MaterialPageRoute<void>(
                       builder: (context) => Detail(assetName)));
             },
-            child: _Item(
+            child: ExampleItemWrapper(
               child: Lottie.asset(
                 assetName,
                 frameBuilder: (context, child, composition) {
@@ -39,31 +38,6 @@ class ExampleLottieOperation extends StatelessWidget {
             ),
           );
         },
-      ),
-    );
-  }
-}
-
-class _Item extends StatelessWidget {
-  final Widget child;
-
-  const _Item({Key? key, required this.child}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: const BorderRadius.all(Radius.circular(10)),
-            boxShadow: [
-              BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  offset: const Offset(2, 2),
-                  blurRadius: 5)
-            ]),
-        child: child,
       ),
     );
   }

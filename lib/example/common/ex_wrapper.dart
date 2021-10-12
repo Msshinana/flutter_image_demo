@@ -50,3 +50,28 @@ class ExampleNetworkImageWrapper extends StatelessWidget {
     );
   }
 }
+
+class ExampleItemWrapper extends StatelessWidget {
+  final Widget child;
+
+  const ExampleItemWrapper({Key? key, required this.child}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: const BorderRadius.all(Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  offset: const Offset(2, 2),
+                  blurRadius: 5)
+            ]),
+        child: child,
+      ),
+    );
+  }
+}

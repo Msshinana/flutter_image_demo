@@ -13,6 +13,7 @@ import 'examples_lottie/hide_after_complete.dart';
 import 'examples_lottie/markers.dart';
 import 'examples_lottie/repeat.dart';
 import 'examples_lottie/run_once.dart';
+import 'examples_lottie/control.dart';
 
 class ExampleLottiePage extends StatelessWidget {
   const ExampleLottiePage({Key? key}) : super(key: key);
@@ -32,6 +33,17 @@ class ExampleLottiePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const ExampleLottieCommon()),
+                );
+              },
+            ),
+            ExampleButtonNode(
+              title: 'control',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return const ExampleLottieOperation();
+                  }),
                 );
               },
             ),

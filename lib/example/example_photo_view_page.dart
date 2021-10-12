@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_image_demo/example/common/app_bar.dart';
 import 'package:flutter_image_demo/example/common/ex_button.dart';
 import 'package:flutter_image_demo/example/common/ex_wrapper.dart';
-import 'package:flutter_image_demo/manager/sn_image_manager.dart';
+import 'package:flutter_image_demo/components/sn_image_manager.dart';
 
 class ExamplePhotoViewPage extends StatelessWidget {
   const ExamplePhotoViewPage({Key? key}) : super(key: key);

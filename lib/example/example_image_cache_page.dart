@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_image_demo/example/common/app_bar.dart';
 import 'common/ex_button.dart';
 import 'package:flutter_blurhash/flutter_blurhash.dart';
-import 'package:flutter_image_demo/manager/sn_image_manager.dart';
+import 'package:flutter_image_demo/components/sn_image_manager.dart';
 import 'package:flutter_image_demo/example/common/ex_wrapper.dart';
 
 class ExampleImageCachePage extends StatelessWidget {
@@ -83,7 +83,7 @@ void _openBlurHashImage(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => const ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           placeholder: AspectRatio(
             aspectRatio: 1.6,
             child: BlurHash(hash: 'LEHV6nWB2yk8pyo0adR*.7kCMdnj'),
@@ -102,7 +102,7 @@ void _openCircularProgressIndicator(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           progressIndicatorBuilder: (context, url, progress) => Center(
             child: CircularProgressIndicator(
               value: progress.progress,
@@ -120,7 +120,7 @@ void _openDecorationImage(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           imageUrl: 'https://via.placeholder.com/300x150',
           imageBuilder: (context, imageProvider) => Container(
             decoration: BoxDecoration(
@@ -146,7 +146,7 @@ void _openCircleAvatar(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           imageUrl: 'https://loremflickr.com/320/240/music?lock=3',
           placeholder: const CircleAvatar(
             // backgroundImage: ,
@@ -168,7 +168,7 @@ void _openFadeOutAnimation(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           maxHeightDiskCache: 180,
           imageUrl: 'https://loremflickr.com/320/240/music?lock=4',
           errorWidget: (context, url, error) => const Icon(Icons.error),
@@ -185,7 +185,7 @@ void _openSvgImage(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => const ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           imageUrl:
               'https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg',
           svgEnable: true,
@@ -200,7 +200,7 @@ void _openNotValideUrl(BuildContext context) {
     context,
     MaterialPageRoute(
       builder: (context) => const ExampleNetworkImageWrapper(
-        child: SNCacheNetworkImage(
+        child: SNCachedNetworkImage(
           imageUrl: 'https://notAvalid.uri',
         ),
       ),
