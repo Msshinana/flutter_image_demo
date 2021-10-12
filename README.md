@@ -11,6 +11,7 @@ flutter image demo 主要展示图片与动画处理的案例。
 <a href="https://pub.flutter-io.cn/packages/photo_view">photo_view</a> 、
 <a href="https://pub.flutter-io.cn/packages/lottie">lottie</a> 、
 <a href="https://pub.flutter-io.cn/packages/flutter_svg">flutter_svg</a>
+<a href="https://pub.flutter-io.cn/packages/svgaplayer_flutter">svgaplayer_flutter</a>
 
 ## Catalog （目录）
 * Mind Map (思维导图)
@@ -35,6 +36,7 @@ dependencies:
   photo_view: ^0.12.0
   flutter_svg: ^0.22.0
   lottie: ^1.2.1
+  svgaplayer_flutter: ^2.0.0
 
 ```
 
@@ -110,29 +112,85 @@ GridView.builder(
 ```
 
 ## Example of Svg
-<img src="https://github.com/Msshinana/imagesource/blob/master/svg_demo.png" width="30%" height="30%">
+<img src="https://github.com/Msshinana/imagesource/blob/master/svga.gif" width="30%" height="30%">
 
 
 ```dart
 
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_image_demo/manager/sn_image_manager.dart';
 
-//Assert
-SvgPicture.asset('assets/flutter_logo.svg'),
-
-//Network
-SvgPicture.network(
-  'https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg',
-  placeholderBuilder: (BuildContext context) => Container(
-      padding: const EdgeInsets.all(30.0),
-      child: const CircularProgressIndicator()),
+//common
+Center(
+  child: SNSvgaplayerWrapper(
+    imageUrl: samples[index].last,
+  ),
 ),
 
-//String
-SvgPicture.string('''<svg viewBox="0 0 200 200"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/>
-</svg>''')
+//AnimationController
+class ControlDetail extends StatefulWidget {
+  final String imageUrl;
+
+  const ControlDetail(this.imageUrl, {Key? key}) : super(key: key);
+
+  @override
+  _ControlDetailState createState() => _ControlDetailState();
+}
+
+class _ControlDetailState extends State<ControlDetail>
+    with TickerProviderStateMixin {
+  late final _controller = SVGAAnimationController(vsync: this);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.imageUrl),
+      ),
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Center(
+              child: SNSvgaplayerWrapper(
+                imageUrl: widget.imageUrl,
+                controller: _controller,
+              ),
+            ),
+            AnimatedBuilder(
+              animation: _controller,
+              builder: (context, _) => Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Slider(
+                      value: _controller.value,
+                      onChanged: (newValue) {
+                        _controller.value = newValue;
+                      },
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(_controller.isAnimating
+                        ? Icons.stop
+                        : Icons.play_arrow),
+                    onPressed: () {
+                      setState(() {
+                        if (_controller.isAnimating) {
+                          _controller.stop();
+                        } else {
+                          _controller.repeat();
+                        }
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 
 ```
 
